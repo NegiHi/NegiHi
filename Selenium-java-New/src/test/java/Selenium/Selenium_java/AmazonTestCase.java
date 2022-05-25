@@ -61,6 +61,9 @@ public class AmazonTestCase extends base {
 	@AfterTest
 	public void afterTest() {
 
+           driver.close();
+	   driver = null;
+
 	}
 
 }
