@@ -52,7 +52,6 @@ public class AmazonTestCase extends base {
 			System.out.println(e.getMessage());
 		}
 		String valueText = l.AmountValue().getText();
-		System.out.println(valueText);
 		// Handling the Expectation(Intentionally failing this Test case)
 		Assert.assertEquals(valueText, ExpectedValue);
 
@@ -61,8 +60,8 @@ public class AmazonTestCase extends base {
 	@AfterTest
 	public void afterTest() {
 
-           driver.close();
-	   driver = null;
+		driver.close();
+		driver = null;
 
 	}
 
